@@ -22,7 +22,7 @@ TBA
 ### Midterm Projects:
 1. John Kim: For designing `pycrypt` --- An app to design and test encryption and decryption algorithms in Python
 
-2. Brayan Nunez: For designing `pylant` --- An app to learn more about various plants and calculate the amount of water needed to grow certain crops.
+2. Brayan Nunez: For designing `pylant` --- An app to learn more about various plants and calculate the amount of water needed to grow certain crops
 
 
 3. Thomas Williams: For designing a radar proof-of-concept and visualizing its performance
