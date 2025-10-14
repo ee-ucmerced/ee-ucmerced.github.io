@@ -16,7 +16,8 @@ TBA
 
 1. Miriam Martinez Pena, Jake Perkins, and Roberto Macias: For crisp and accurate MATLAB GUI for `pyoscilloscope`
 2. Ramiz Haddad and Matthew Lansing: For python-based image classification using the MNIST dataset
-3. John Kim: For crafting MIPS programs0
+3. Ken Guo: For carefully designing a UI for an oscilloscope using C++
+4. Honorable mentions: John Kim, Violet Chen, and Andrew Nuisud for taking on MIPS programming
 
 
 ### Midterm Projects:
