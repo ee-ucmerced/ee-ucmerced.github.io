@@ -45,7 +45,7 @@ a:focus {
 }
 
 main {
-  padding: 0 5vw 6rem;
+  padding: 0 0 6rem;
 }
 
 .site-header {
@@ -57,7 +57,6 @@ main {
   justify-content: space-between;
   padding: 1.1rem 5vw;
   background: var(--brand-navy);
-  
   box-shadow: 0 8px 20px rgba(0, 40, 86, 0.08);
 }
 
@@ -79,7 +78,7 @@ main {
   font-size: 0.85rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .brand-title {
@@ -92,7 +91,7 @@ main {
 .brand-subtitle {
   font-weight: 400;
   letter-spacing: 0.18em;
-  color: var(--surface-alt);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .site-nav {
@@ -100,7 +99,7 @@ main {
   gap: 1.5rem;
   font-size: 0.95rem;
   font-weight: 600;
-  color: var(--surface)
+  color: var(--surface);
 }
 
 .site-nav a {
@@ -127,15 +126,12 @@ main {
 }
 
 .hero {
-  margin: 4rem auto 3rem;
-  padding: clamp(3rem, 8vw, 5rem);
-  border-radius: 12px;
+  margin: 0;
+  padding: clamp(5rem, 10vw, 6.5rem) max(6vw, 3rem);
   color: #f9fbfd;
   background:
-    linear-gradient(135deg, rgba(0, 40, 86, 0.95), rgba(0, 40, 86, 0.76)),
-    radial-gradient(circle at 10% 20%, rgba(255, 184, 28, 0.25), transparent 60%);
-  box-shadow: var(--shadow-soft);
-  max-width: 1100px;
+    linear-gradient(112deg, rgba(0, 40, 86, 0.82), rgba(0, 40, 86, 0.58)),
+    url("https://www.ucmerced.edu/sites/g/files/ufvvjh1421/f/images/headers/accolades-header-homepage_09192025.jpg") center/cover no-repeat;
 }
 
 .hero h1 {
@@ -241,12 +237,16 @@ main {
 }
 
 .content-section {
-  margin: 0 auto 4.5rem;
-  max-width: 1100px;
-  padding: clamp(2.5rem, 6vw, 3.5rem);
-  border-radius: 12px;
+  margin: 0;
+  max-width: none;
+  padding: clamp(3rem, 7vw, 4.5rem) max(6vw, 3rem);
+  border-radius: 0;
   background: var(--surface);
-  box-shadow: 0 10px 26px rgba(9, 30, 66, 0.08);
+  box-shadow: none;
+}
+
+main > section + section {
+  border-top: 1px solid var(--border-light);
 }
 
 .content-section h2 {
@@ -386,41 +386,80 @@ main {
   background: var(--surface-alt);
 }
 
-.timeline-list {
-  list-style: none;
-  padding: 0;
-  margin: 2.5rem 0 0;
-  border-left: 3px solid rgba(0, 40, 86, 0.18);
-}
-
-.timeline-list li {
+.timeline-track {
   position: relative;
-  padding: 0 0 2.5rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: clamp(1rem, 3vw, 2rem);
+  margin-top: 3rem;
+  padding-top: 4.5rem;
 }
 
-.timeline-list li::before {
+.timeline-track::before {
   content: "";
   position: absolute;
-  left: -10px;
-  top: 0.35rem;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: var(--brand-gold);
-  box-shadow: 0 0 0 6px rgba(255, 184, 28, 0.2);
+  top: 4.5rem;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, rgba(255, 184, 28, 0.8), rgba(0, 40, 86, 0.6));
 }
 
-.timeline-list time {
-  font-size: 0.85rem;
-  letter-spacing: 0.24em;
-  text-transform: uppercase;
-  color: var(--text-muted);
+.timeline-item {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 7rem clamp(0.5rem, 2vw, 1.5rem) 0;
 }
 
-.timeline-list h3 {
-  margin: 0.4rem 0 0.6rem;
-  font-size: 1.35rem;
+.timeline-year {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(0, 40, 86, 0.08);
   color: var(--brand-navy);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+
+.timeline-point {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 4px solid var(--brand-gold);
+  background: var(--surface);
+  position: absolute;
+  top: 4.5rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-bottom: 0;
+  z-index: 1;
+  box-shadow: 0 0 0 6px rgba(255, 184, 28, 0.18);
+}
+
+.timeline-item h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.2rem;
+  color: var(--brand-navy);
+}
+
+.timeline-item p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
 }
 
 .engage {
@@ -463,8 +502,8 @@ main {
 }
 
 .resources {
-  background: linear-gradient(135deg, rgba(0, 40, 86, 0.96), rgba(0, 40, 86, 0.82));
-  color: #ffffff;
+  background: var(--surface);
+  color: var(--text-primary);
 }
 
 .resource-list {
@@ -482,12 +521,24 @@ main {
   gap: 1rem;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.08);
+  background: var(--surface-alt);
+  border: 1px solid var(--border-light);
 }
 
 .resource-list span {
   font-weight: 600;
   letter-spacing: 0.03em;
+  color: var(--brand-navy);
+}
+
+.resource-empty {
+  justify-content: center;
+  background: var(--surface);
+  border: 1px dashed rgba(0, 40, 86, 0.28);
+}
+
+.resource-empty span {
+  text-align: center;
 }
 
 .team {
@@ -544,11 +595,16 @@ main {
     justify-self: center;
     width: 100%;
   }
+
+  .timeline-track {
+    gap: 1.25rem;
+    padding-top: 2rem;
+  }
 }
 
 @media (max-width: 720px) {
   main {
-    padding: 0 1.5rem 4rem;
+    padding: 0 0 4rem;
   }
 
   .site-header {
@@ -583,5 +639,38 @@ main {
 
   .site-footer {
     padding: 2.5rem 1.5rem;
+  }
+
+  .timeline-track {
+    flex-direction: column;
+    gap: 2.5rem;
+    padding-top: 0;
+  }
+
+  .timeline-track::before {
+    display: none;
+  }
+
+  .timeline-item {
+    align-items: flex-start;
+    text-align: left;
+    padding: 0;
+  }
+
+  .timeline-year {
+    position: static;
+    transform: none;
+    margin: 0 0 0.75rem;
+  }
+
+  .timeline-point {
+    position: static;
+    transform: none;
+    margin: 0 0 1rem;
+  }
+
+  .timeline-year,
+  .timeline-point {
+    margin-left: 0;
   }
 }
