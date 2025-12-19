@@ -218,8 +218,12 @@ main {
   border-color: var(--brand-gold);
 }
 
+.btn:focus {
+  outline: none;
+}
+
 .btn.primary:hover,
-.btn.primary:focus {
+.btn.primary:focus-visible {
   transform: translateY(-3px);
   background: var(--brand-gold);
   color: var(--brand-navy);
@@ -233,7 +237,7 @@ main {
 }
 
 .btn.secondary:hover,
-.btn.secondary:focus {
+.btn.secondary:focus-visible {
   transform: translateY(-3px);
   background: #000000;
   border-color: #000000;
@@ -248,7 +252,7 @@ main {
 }
 
 .btn.tertiary:hover,
-.btn.tertiary:focus {
+.btn.tertiary:focus-visible {
   transform: translateY(-3px);
   background: var(--brand-navy);
   color: #ffffff;

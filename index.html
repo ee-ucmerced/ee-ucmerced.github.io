@@ -1,26 +1,42 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>UC Merced Electrical Engineering RED Project</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electrical Engineering at UC Merced</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="./home.css">
 </head>
 <body>
-  <div data-include="components/header.html"></div>
+  <header class="site-header">
+    <div class="brand">
+      <img src="https://www.ucmerced.edu/sites/g/files/ufvvjh1421/f/ucmlogo_1.png" alt="University of California Merced logo" />
+      <div class="brand-text">
+        <span class="brand-title">Electrical Engineering</span>
+      </div>
+    </div>
+  </header>
 
   <main>
-    <div data-include="components/hero.html"></div>
-    <div data-include="components/overview.html"></div>
-    <div data-include="components/team.html"></div>
-    <div data-include="components/resources.html"></div>
+    <section class="hero-copy">
+      <h1>UC Merced Electrical Engineering hub</h1>
+      <p class="lede">Explore our highlighted websites to see current projects and happenings across the EE department.</p>
+    </section>
+
+    <section class="links-section">
+      <div class="link-stack">
+        <a class="text-link" href="./RED/">
+          <span class="link-title">UCM EE Redisgn - Research &amp; Engineering Design (RED)</span>
+          <span class="link-desc">Program site with team, projects, and highlights.</span>
+        </a>
+        <a class="text-link" href="./ee021/">
+          <span class="link-title">EE 021 Hall of Fame</span>
+          <span class="link-desc">Student spotlight and standout designs.</span>
+        </a>
+      </div>
+    </section>
   </main>
-
-  <div data-include="components/footer.html"></div>
-
-  <script src="components.js"></script>
 </body>
 </html>
