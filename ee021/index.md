@@ -10,7 +10,9 @@ This list is not in order of ranking.
 
 ### Final Projects:
 
-TBA
+1. Kevin Florentino Morelos and Riley Clarke: For effectively integrating MATLAB, App Designer, and Simulink, while helping others in the class too.
+2. Brandon Sanchez: For demonstrating superior programming skills in MIPS.
+3. Jackson Blunt: For achieving 97.13% accuracy on the Digit Recognizer (MNIST dataset) task on Kaggle. He is on the leaderboard [here](https://www.kaggle.com/competitions/digit-recognizer/leaderboard?search=obshant).  
 
 ### Midterm Projects:
 
