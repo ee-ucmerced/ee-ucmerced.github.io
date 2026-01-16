@@ -259,6 +259,20 @@ main {
   box-shadow: 0 10px 25px rgba(0, 40, 86, 0.25);
 }
 
+.btn.quartenary{
+  background: transparent;
+  color: var(--brand-navy);
+  border-color: var(--brand-navy);
+}
+
+.btn.quartenary:hover,
+.btn.quartenary:focus-visible {
+  transform: translateY(-3px);
+  background: var(--brand-navy);
+  color: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 40, 86, 0.25);
+}
+
 .hero-highlights {
   margin: 0;
   padding: 0;
@@ -748,4 +762,19 @@ main > section + section {
   .timeline-point {
     margin-left: 0;
   }
+}
+
+.milestones {
+  background: var(--surface);
+}
+
+.milestone {
+  margin-top: 2.5rem;
+  padding: 1.75rem;
+  border-left: 4px solid var(--brand-navy);
+  background: rgba(44, 99, 163, 0.08);
+  border-radius: 8px;
+  font-family: var(--font-formal);
+  line-height: 1.7;
+
 }
