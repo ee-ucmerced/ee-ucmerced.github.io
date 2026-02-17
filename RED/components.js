@@ -52,4 +52,44 @@ Promise.all(
       target.scrollIntoView({ behavior: "smooth", block: "start" });
     });
   });
+
+  const siteHeader = document.querySelector(".site-header");
+  const menuToggle = document.querySelector(".menu-toggle");
+  const nav = document.querySelector(".site-nav");
+
+  if (siteHeader && menuToggle && nav) {
+    const closeMenu = () => {
+      siteHeader.classList.remove("nav-open");
+      menuToggle.setAttribute("aria-expanded", "false");
+    };
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = siteHeader.classList.toggle("nav-open");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    nav.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        closeMenu();
+      });
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        closeMenu();
+      }
+    });
+
+    document.addEventListener("click", (event) => {
+      if (!siteHeader.contains(event.target)) {
+        closeMenu();
+      }
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 860) {
+        closeMenu();
+      }
+    });
+  }
 });
