@@ -1,14 +1,20 @@
 <header class="site-header">
-  <div class="brand">
-    <a href="#top" aria-label="Back to top">
-      <img src="https://www.ucmerced.edu/sites/g/files/ufvvjh1421/f/ucmlogo_1.png" alt="University of California Merced logo" />
-    </a>
-    <div class="brand-text">
-      <span class="brand-title">Electrical Engineering / NSF RED</span>
-      <span class="brand-subtitle">A part of NSF Revolutionizing Engineering Departments (RED) initiative</span>
+  <div class="header-row">
+    <div class="brand">
+      <a class="brand-logo-link" href="#top" aria-label="Back to top">
+        <img src="https://www.ucmerced.edu/sites/g/files/ufvvjh1421/f/ucmlogo_1.png" alt="University of California Merced logo" />
+      </a>
+      <div class="brand-text">
+        <span class="brand-title">Electrical Engineering / NSF RED</span>
+        <span class="brand-subtitle">A part of NSF Revolutionizing Engineering Departments (RED) initiative</span>
+      </div>
     </div>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle navigation menu">
+      <span class="menu-icon" aria-hidden="true"></span>
+      <span>Menu</span>
+    </button>
   </div>
-  <nav class="site-nav">
+  <nav class="site-nav" id="primary-navigation">
     <a href="#top">Introduction</a>
     <a href="#overview">Overview</a>
     <a href="#team">Team</a>
