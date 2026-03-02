@@ -968,15 +968,23 @@ main > section + section {
 }
 
 .milestone {
-  margin-top: 2.5rem;
+  margin-top: 2.0rem;
+  margin-bottom: 2.0rem;
   padding: 1.75rem;
-  border-left: 4px solid var(--brand-navy);
-  background: rgba(44, 99, 163, 0.08);
-  border-radius: 8px;
-  font-family: var(--font-formal);
-  line-height: 1.7;
+  border-radius: 10px;
+  border: 1px solid var(--border-light);
+  background: var(--surface-alt);
+  transition: transform 200ms ease, box-shadow 200ms ease;
 
 }
+
+.milestone:hover,
+.milestone:focus-within {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-soft);
+}
+
+
 @media (max-width: 430px) {
   :root {
     --header-offset: 5.5rem;
