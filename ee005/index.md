@@ -3,58 +3,12 @@
 <link rel="stylesheet" href="style.css">
 
 <div class="hero-video">
-  <video id="ee005-teaser-video" muted playsinline preload="metadata" poster="web-photos/video-poster.png">
-    <source src="web-photos/ee005-video.mp4" type="video/mp4">
+  <video muted autoplay loop playsinline preload="metadata" poster="web-photos/video-poster.png">
+    <source src="web-photos/ee005-video-teaser.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
   <p class="caption">Final robotics competition teaser.</p>
 </div>
-
-<script>
-  (function () {
-    var video = document.getElementById("ee005-teaser-video");
-    if (!video) return;
-
-    var teaserStart = 0;
-    video.muted = true;
-    video.defaultMuted = true;
-    video.controls = false;
-    video.loop = false;
-    video.pause();
-
-    function playTeaser() {
-      teaserStart = Math.max(video.duration - 10, 0);
-
-      if (Math.abs(video.currentTime - teaserStart) > 0.25) {
-        video.pause();
-        video.currentTime = teaserStart;
-        video.addEventListener("seeked", function startAfterSeek() {
-          video.removeEventListener("seeked", startAfterSeek);
-          video.play().catch(function () {});
-        });
-      } else {
-        video.play().catch(function () {});
-      }
-    }
-
-    if (video.readyState >= 1) {
-      playTeaser();
-    } else {
-      video.addEventListener("loadedmetadata", playTeaser, { once: true });
-    }
-
-    video.addEventListener("timeupdate", function () {
-      if (video.duration && video.currentTime < teaserStart) {
-        video.currentTime = teaserStart;
-      }
-
-      if (video.duration && video.currentTime >= video.duration - 0.15) {
-        video.currentTime = teaserStart;
-        video.play().catch(function () {});
-      }
-    });
-  }());
-</script>
 
 ## EE 005: Designing and Building EE Systems
 
