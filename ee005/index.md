@@ -71,8 +71,8 @@ Recognizing the fastest robots on the basic and advanced tracks.
       <img class="photo-slot" src="web-photos/spring-2026-speed-2.png" alt="Spring 2026 second fastest robot">
       <figcaption>The runner up robot</figcaption>
     </figure>
-    <p><strong>Students:</strong> Alan Jimenez, Isaac Anderson, Itzel Gonzalez Hernan, William Cargill</p>
-    <p class="caption">The second fastest robot design: ladybird design</p>
+    <p><strong>Students:</strong> Chimka Korie, Julio Cortez Serpas, Isaiah Ramos</p>
+    <p class="caption">The second fastest robot design (shared by team 6 as well, see below)</p>
   </section>
 </div>
 
