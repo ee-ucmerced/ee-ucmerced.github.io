@@ -62,7 +62,7 @@ Recognizing the fastest robots on the basic and advanced tracks.
       <img class="photo-slot" src="web-photos/spring-2026-speed-1.png" alt="Spring 2026 fastest robot">
       <figcaption>The winning robot</figcaption>
     </figure>
-    <p><strong>Students:</strong> Andres, Anthony, Jesus, Justin</p>
+    <p><strong>Students:</strong> Andres Gonzalez-Guevara, Anthony Klostrakis, Jesus Lopez-Alvarez, Justin Ear</p>
     <p class="caption">The fastest robot design: simple and effective</p>
   </section>
   <section class="winner-card">
@@ -71,7 +71,7 @@ Recognizing the fastest robots on the basic and advanced tracks.
       <img class="photo-slot" src="web-photos/spring-2026-speed-2.png" alt="Spring 2026 second fastest robot">
       <figcaption>The runner up robot</figcaption>
     </figure>
-    <p><strong>Students:</strong> Alan, Isaac, Itzel, William</p>
+    <p><strong>Students:</strong> Alan Jimenez, Isaac Anderson, Itzel Gonzalez Hernan, William Cargill</p>
     <p class="caption">The second fastest robot design: ladybird design</p>
   </section>
 </div>
@@ -87,7 +87,7 @@ Recognizing the most popular robot designs selected by the class.
       <img class="photo-slot" src="web-photos/spring-2026-design-1.png" alt="Spring 2026 People's Choice #1">
       <figcaption>Most popular design</figcaption>
     </figure>
-    <p><strong>Students:</strong> Alan, Isaac, Itzel, William</p>
+    <p><strong>Students:</strong> Alan Jimenez, Isaac Anderson, Itzel Gonzalez Hernan, William Cargill</p>
     <p class="caption">Most popular design: A ladybird by Team 6</p>
   </section>
   <section class="winner-card">
@@ -96,7 +96,7 @@ Recognizing the most popular robot designs selected by the class.
       <img class="photo-slot" src="web-photos/spring-2026-design-2.png" alt="Spring 2026 honorable mention popular robot design">
       <figcaption>Honorary mention: Most popular design</figcaption>
     </figure>
-    <p><strong>Students:</strong> Angelica, Hark, Jayden, and Quenie</p>
+    <p><strong>Students:</strong> Angelica Ventura, Harkanwal Behniwal, Jayden Zhu, and Quenie Mavic Jean Fornoles</p>
     <p class="caption">Most popular design: A minecraft cat by Team 8</p>
   </section>
 </div>
