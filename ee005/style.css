@@ -1,0 +1,69 @@
+body {
+    background-color: #f0f0f0;
+}
+
+.hall-intro {
+    margin-bottom: 2rem;
+}
+
+.hero-video {
+    margin: 1rem 0 2rem;
+}
+
+.hero-video video {
+    display: block;
+    width: 100%;
+    max-height: 520px;
+    object-fit: cover;
+    border-radius: 8px;
+    background: #000000;
+}
+
+.term-section {
+    margin: 2.25rem 0;
+}
+
+.winner-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0 1.75rem;
+}
+
+.winner-card {
+    background: #ffffff;
+    border: 1px solid #d8dee8;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.winner-card h4 {
+    margin-top: 0;
+}
+
+.photo-frame {
+    margin: 0.75rem 0;
+}
+
+.photo-slot {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border: 1px dashed #8a96a8;
+    border-radius: 6px;
+    background: #f7f8fa;
+    margin: 0;
+}
+
+.photo-frame figcaption {
+    color: #586579;
+    font-size: 0.85rem;
+    margin-top: 0.35rem;
+}
+
+.caption {
+    color: #586579;
+    font-size: 0.92rem;
+    margin-top: 0.35rem;
+}
