@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="style.css">
 
 <div class="hero-video">
-  <video id="ee005-teaser-video" controls muted autoplay playsinline preload="metadata" poster="web-photos/spring-2026-speed-1.png">
+  <video id="ee005-teaser-video" muted autoplay playsinline preload="metadata" poster="web-photos/spring-2026-speed-1.png">
     <source src="web-photos/ee005-video.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
@@ -16,17 +16,23 @@
     if (!video) return;
 
     var teaserStart = 0;
+    video.muted = true;
+    video.defaultMuted = true;
 
     video.addEventListener("loadedmetadata", function () {
       teaserStart = Math.max(video.duration - 10, 0);
       video.currentTime = teaserStart;
-      video.play();
+      video.play().catch(function () {});
     });
 
     video.addEventListener("timeupdate", function () {
+      if (video.duration && video.currentTime < teaserStart) {
+        video.currentTime = teaserStart;
+      }
+
       if (video.duration && video.currentTime >= video.duration - 0.15) {
         video.currentTime = teaserStart;
-        video.play();
+        video.play().catch(function () {});
       }
     });
   }());
@@ -37,9 +43,8 @@
 <div class="hall-intro">
 The teams listed here are recognized for excellence in the final robotics competition for EE 005 at UC Merced.
 
-This Hall of Fame highlights robots that excelled on the advanced track and designs selected by the class for their creativity, engineering, and presentation.
+This Hall of Fame highlights robots that excelled on the basic and advanced track and designs selected by the class for their creativity, engineering, and presentation.
 
-This list is not in order of ranking within each award category.
 </div>
 
 ## EE 005: Spring 2026
@@ -48,26 +53,26 @@ This list is not in order of ranking within each award category.
 
 #### Bobcat Speed Challenge
 
-Recognizing the fastest robots on the advanced track.
+Recognizing the fastest robots on the basic and advanced tracks.
 
 <div class="winner-grid">
   <section class="winner-card">
-    <h4>Speed Team 1</h4>
+    <h4>Fastest Robot</h4>
     <figure class="photo-frame">
-      <img class="photo-slot" src="web-photos/spring-2026-speed-1.png" alt="Spring 2026 Speed Team 1 robot on the advanced track">
-      <figcaption>Upload: web-photos/spring-2026-speed-1.png</figcaption>
+      <img class="photo-slot" src="web-photos/spring-2026-speed-1.png" alt="Spring 2026 fastest robot">
+      <figcaption>The winning robot</figcaption>
     </figure>
-    <p><strong>Students:</strong> Student 1, Student 2, Student 3, Student 4</p>
-    <p class="caption">Photo slot: advanced track run for the winning robot.</p>
+    <p><strong>Students:</strong> Andres, Anthony, Jesus, Justin</p>
+    <p class="caption">The fastest robot design: simple and effective</p>
   </section>
   <section class="winner-card">
-    <h4>Speed Team 2</h4>
+    <h4>2nd Fastest Robot</h4>
     <figure class="photo-frame">
-      <img class="photo-slot" src="web-photos/spring-2026-speed-2.png" alt="Spring 2026 Speed Team 2 robot on the advanced track">
-      <figcaption>Upload: web-photos/spring-2026-speed-2.png</figcaption>
+      <img class="photo-slot" src="web-photos/spring-2026-speed-2.png" alt="Spring 2026 second fastest robot">
+      <figcaption>The runner up robot</figcaption>
     </figure>
-    <p><strong>Students:</strong> Student 5, Student 6, Student 7, Student 8</p>
-    <p class="caption">Photo slot: advanced track run for the winning robot.</p>
+    <p><strong>Students:</strong> Alan, Isaac, Itzel, William</p>
+    <p class="caption">The second fastest robot design: ladybird design</p>
   </section>
 </div>
 
@@ -77,22 +82,22 @@ Recognizing the most popular robot designs selected by the class.
 
 <div class="winner-grid">
   <section class="winner-card">
-    <h4>Design Team 1</h4>
+    <h4>Most Popular Design</h4>
     <figure class="photo-frame">
-      <img class="photo-slot" src="web-photos/spring-2026-design-1.png" alt="Spring 2026 People's Choice Design Team 1 robot design">
-      <figcaption>Upload: web-photos/spring-2026-design-1.png</figcaption>
+      <img class="photo-slot" src="web-photos/spring-2026-design-1.png" alt="Spring 2026 People's Choice #1">
+      <figcaption>Most popular design</figcaption>
     </figure>
-    <p><strong>Students:</strong> Student 9, Student 10, Student 11, Student 12</p>
-    <p class="caption">Photo slot: actual robot design for the popular design winner.</p>
+    <p><strong>Students:</strong> Alan, Isaac, Itzel, William</p>
+    <p class="caption">Most popular design: A ladybird by Team 6</p>
   </section>
   <section class="winner-card">
-    <h4>Design Team 2</h4>
+    <h4>Honorable Mention: Most Popular Design</h4>
     <figure class="photo-frame">
-      <img class="photo-slot" src="web-photos/spring-2026-design-2.png" alt="Spring 2026 People's Choice Design Team 2 robot design">
-      <figcaption>Upload: web-photos/spring-2026-design-2.png</figcaption>
+      <img class="photo-slot" src="web-photos/spring-2026-design-2.png" alt="Spring 2026 honorable mention popular robot design">
+      <figcaption>Honorary mention: Most popular design</figcaption>
     </figure>
-    <p><strong>Students:</strong> Student 13, Student 14, Student 15, Student 16</p>
-    <p class="caption">Photo slot: actual robot design for the popular design winner.</p>
+    <p><strong>Students:</strong> Angelica, Hark, Jayden, and Quenie</p>
+    <p class="caption">Most popular design: A minecraft cat by Team 8</p>
   </section>
 </div>
 
@@ -106,21 +111,17 @@ Recognizing the most popular robot designs selected by the class.
 
 <div class="winner-grid">
   <section class="winner-card">
-    <h4>Design Team 1</h4>
+    <h4>Best Design</h4>
     <figure class="photo-frame">
-      <img class="photo-slot" src="web-photos/spring-2025-design-1.png" alt="Spring 2025 People's Choice Design Team 1 robot design">
-      <figcaption>Upload: web-photos/spring-2025-design-1.png</figcaption>
+      <img class="photo-slot" src="web-photos/spring-2025-design-1.png" alt="Spring 2025 People's Choice Design Award">
+      <figcaption>Best design</figcaption>
     </figure>
-    <p><strong>Students:</strong> Student 9, Student 10, Student 11, Student 12</p>
-    <p class="caption">Photo slot: actual robot design for the popular design winner.</p>
   </section>
   <section class="winner-card">
-    <h4>Design Team 2</h4>
+    <h4>Honorable Mention: Most Popular Design</h4>
     <figure class="photo-frame">
-      <img class="photo-slot" src="web-photos/spring-2025-design-2.png" alt="Spring 2025 People's Choice Design Team 2 robot design">
-      <figcaption>Upload: web-photos/spring-2025-design-2.png</figcaption>
+      <img class="photo-slot" src="web-photos/spring-2025-design-2.png" alt="Spring 2025 honorable mention popular robot design">
+      <figcaption>Honorary mention: Most popular design</figcaption>
     </figure>
-    <p><strong>Students:</strong> Student 13, Student 14, Student 15, Student 16</p>
-    <p class="caption">Photo slot: actual robot design for the popular design winner.</p>
   </section>
 </div>
