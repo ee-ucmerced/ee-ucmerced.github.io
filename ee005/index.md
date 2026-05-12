@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="style.css">
 
 <div class="hero-video">
-  <video id="ee005-teaser-video" muted autoplay playsinline preload="metadata" poster="web-photos/spring-2026-speed-1.png">
+  <video id="ee005-teaser-video" muted autoplay playsinline preload="metadata" poster="web-photos/video-poster.png">
     <source src="web-photos/ee005-video.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
