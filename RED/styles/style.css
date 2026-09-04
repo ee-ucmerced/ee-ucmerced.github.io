@@ -737,6 +737,40 @@ main > section + section {
   text-transform: uppercase;
 }
 
+.nsf-acknowledgement {
+  display: grid;
+  gap: 0.9rem;
+  justify-items: center;
+  max-width: 640px;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.nsf-logo-row {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.nsf-logo-mark {
+  height: 64px;
+  width: auto;
+}
+
+.nsf-logo-wordmark {
+  height: 30px;
+  width: auto;
+}
+
+.nsf-disclaimer {
+  margin: 0;
+  font-size: 0.78rem;
+  line-height: 1.55;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.72);
+  text-transform: none;
+}
+
 @media (max-width: 1024px) {
   .site-nav {
     gap: 1.1rem;
@@ -913,6 +947,11 @@ main > section + section {
 
   .site-footer {
     padding: 2.3rem 1.2rem;
+  }
+
+  .nsf-logo-row {
+    flex-direction: column;
+    gap: 0.5rem;
   }
 
   .timeline-track {
