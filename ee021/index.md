@@ -20,7 +20,7 @@ This list is not in order of ranking.
 2. Christine Chang: For designing Video-based Lane Detection
 3. Akshat Mehrotra: For designing a Program to predict the probability of a Football catch using Computer Vision
 4. Brandon Sanchez: For designing a GUI for plotting IV curves
-5. Trevor Sen: For designing a Graphical RPG game
+5. Trevor Sen: For designing a [Graphical RPG game](https://github.com/RCGames587/EE021-RPG-Midterm-Project)
 
 #### Honorable Mentions:
 
