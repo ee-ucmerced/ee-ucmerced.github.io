@@ -13,7 +13,7 @@ This list is not in order of ranking.
 1. Jasmine Kurniawan: Aircraft telemetry demodulator
 2. Liliana Arzola: Dog Motion/Acitivty Tracker
 3. Alan Jimenez: Morning alarm clock
-4. Saulo Navarro: Music analysis dashboard
+4. Saulo Navarro: Music analysis dashboard — [quakisting](https://quackisting.github.io/)
 5. Lijhon Adhikari: Ultrasonic radar
 
 ## EE 021: Fall 2025
