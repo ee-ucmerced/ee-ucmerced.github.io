@@ -6,6 +6,16 @@ If/when provided, the link to the GitHub repository of the project will be added
 
 This list is not in order of ranking.
 
+## EE 021: Fall 2026
+
+### Midterm Projects:
+
+1. Jasmine Kurniawan: Aircraft telemetry demodulator
+2. Liliana Arzola: Dog Motion/Acitivty Tracker
+3. Alan Jimenez: Morning alarm clock
+4. Saulo Navarro: Music analysis dashboard
+5. Lijhon Adhikari: Ultrasonic radar
+
 ## EE 021: Fall 2025
 
 ### Final Projects:
