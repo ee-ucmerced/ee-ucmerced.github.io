@@ -21,6 +21,13 @@ Promise.all(
     }
   })
 ).then(() => {
+  const homePage = document.body.dataset.homePage;
+  if (homePage) {
+    document.querySelectorAll('.site-header a[href^="#"]').forEach((link) => {
+      link.setAttribute("href", homePage + link.getAttribute("href"));
+    });
+  }
+
   const yearElement = document.getElementById("year");
   if (yearElement) {
     yearElement.textContent = new Date().getFullYear();

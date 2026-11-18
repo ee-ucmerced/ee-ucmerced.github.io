@@ -7,7 +7,9 @@
   <link rel="icon" href="favicon.ico" />
   <link rel="stylesheet" href="styles/style.css" />
 </head>
-<body>
+<body data-home-page="index.html">
+  <div data-include="components/header.html"></div>
+
   <main>
     <section class="content-section resources" aria-labelledby="admin-title">
       <h1 id="admin-title">Admin</h1>
@@ -21,5 +23,9 @@
       </ul>
     </section>
   </main>
+
+  <div data-include="components/footer.html"></div>
+
+  <script src="components.js"></script>
 </body>
 </html>
